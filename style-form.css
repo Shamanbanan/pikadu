@@ -1,0 +1,79 @@
+html,
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: #e5e5e5;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #fa8c16;
+  --color-white: #fff;
+  --color-light-theme: #e5e5e5;
+  --color-dark-theme: #595959;
+  --font-primary: 1em;
+  --transition-primary: all 0.7s;
+}
+/* content form*/
+
+.form-posts {
+  width: 100%;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+.header-input {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 31px;
+  margin-bottom: 16px;
+  font-size: 25px;
+  border: #595959 1px solid;
+}
+.textarea-input {
+  height: 100%;
+  min-height: 362px;
+  padding: 31px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  resize: none;
+}
+.submit-input {
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  padding: 16px 16px;
+  background-color: #faad14;
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition-primary);
+}
+.submit-input:hover {
+  transition: var(--transition-primary);
+  background-color: var(--color-primary);
+}
+.submit-input .icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
+  align-items: flex-start;
+}
+.submit-post-direction {
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+/* content form*/

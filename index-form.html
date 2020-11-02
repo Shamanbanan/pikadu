@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style-form.css" />
+    <title>Pikadu</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="index.html"><img src="images/Pikadu.svg" alt="Pikadu" /></a>
+        <nav class="header-nav">
+          <span class="burger-menu-buttons"></span>
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Свежее</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Лучшее</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Горячее</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Подписки</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="input-group search">
+          <input
+            type="search"
+            id="search"
+            class="search-input"
+            placeholder="Поиск по сайту ..."
+          />
+          <button class="search-button">
+            <img class="search-icon" src="images/search.svg" alt="search" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <main class="form-posts">
+        <form class="form-post" action="">
+          <input
+            class="header-input"
+            type="text"
+            placeholder="Придумайте заголовок"
+          />
+          <textarea
+            class="textarea-input"
+            name="paragraph-post"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Текст вашего поста "
+          ></textarea>
+        </form>
+        <div class="submit-post-direction">
+          <button class="submit-input" type="submit">
+            <svg class="icon">
+              <use xlink:href="icons.svg#post"></use>
+            </svg>
+            <span class="submit-text">Опубликовать пост</span>
+          </button>
+          <button class="video-button">
+            <span class="video">Видео</span>
+          </button>
+          <button class="photo-button">
+            <span class="photo">Фото</span>
+          </button>
+        </div>
+      </main>
+      <aside class="sidebar">
+        <div class="header-profil">
+          <a class="link-photo" href="#">
+            <img
+              src="https://sun9-14.userapi.com/impf/vdY944qa8VAKwwIBvDeCJcQx8FfLIxyV7EpyUQ/iutQdoC7_Ag.jpg?size=50x0&quality=88&crop=224,292,258,258&sign=616501ecbb1958f6f0800f0a50da4bb0&ava=1"
+              alt=""
+            />
+          </a>
+          <span>Shamanbanan</span>
+          <svg class="icon">
+            <use xlink:href="icons.svg#Vector"></use>
+          </svg>
+        </div>
+        <nav class="nav-profile">
+          <a href="#" class="link-profile">Ответы</a>
+          <a href="#" class="link-profile">Комментарии</a>
+          <a href="#" class="link-profile">Оценки</a>
+          <a href="#" class="link-profile">Сохраненные</a>
+          <a href="#" class="link-profile">Подписки</a>
+          <a href="#" class="link-profile">Заметки</a>
+          <a href="#" class="link-profile">Игнор-лист</a>
+        </nav>
+      </aside>
+    </div>
+    <script src="klik.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>
